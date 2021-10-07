@@ -10,14 +10,14 @@ jobs:
    runs-on: ubuntu-latest
    steps:
    - name: Checkout
-     uses: actions/checkout@master
+     uses: actions/checkout@main
    - name: Sync s3
-     uses: jakejarvis/s3-sync-action@master
+     uses: jakejarvis/s3-sync-action@main
      with:
        args: --acl public-read --follow-symlinks --delete
      env:
        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESSKEY }}
+       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRETKEY }}
        AWS_REGION: 'ap-northeast-1'   # S3のリージョンを指定します
        SOURCE_DIR: 'public'      # S3のデプロイ対象のディレクトリを指定します  
