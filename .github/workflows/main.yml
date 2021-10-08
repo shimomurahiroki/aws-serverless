@@ -20,5 +20,4 @@ jobs:
        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESSKEY }}
        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRETKEY }}
        AWS_REGION: 'ap-northeast-1'   # S3のリージョンを指定します
-       FROM_PATH: "./"
-       SOURCE_DIR: 's3://rrs-product-details/'      # S3のデプロイ対象のディレクトリを指定します  
+       run: aws s3 sync --delete --region ap-northeast-1 ./files/ s3://rrs-product-details/
