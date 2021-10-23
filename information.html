@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>BasicMemoList案内ページ -CreationStockが運営するサービスです。-</title>
-<meta name="Description" content="" />
-<meta name="Keywords" content="BasicMemoList,MemoList,Memo,アプリ," />
+<title>ここにキーワードを含むページのタイトルを記入</title>
+<meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
+<meta name="Keywords" content="キーワード,キーワード,キーワード" />
 <link rel="icon" href="http://saetl.net/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" type="img/x-icon" href="" />
+<link rel="shortcut icon" type="img/x-icon" href="http://saetl.net/favicon.ico" />
 <link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet"><!--googlewebフォント-->
+<link href='https://fonts.googleapis.com/css?family=Mrs Sheppards' rel='stylesheet' type='text/css'><!--googlewebフォント-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!--アイコンwebフォント-->
 <link rel="stylesheet" type="text/css" href="css/menu_sideslide.css" /><!--ドロワーメニュー-->
-<link rel="stylesheet" href="css/jquery-letterfx.css"><!--テキストアニメーション-->
-
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
 </head>
 
 <body>
@@ -55,15 +55,30 @@
   <div class="content-wrap">
     <div class="content">
 
-      <!--ヘッダー-->
-      <header>
-        <h1 class="tagline toppage">Basic Memo List</h1>
-      </header>
       <!--右側SNSのアニメーション-->
       <ul id="nav">
-        <li><a class="facebook" href="#" target="_blank"><i class="fa fa-facebook-official fa_awe"></i> <span>Facebook</span> </a></li>
-        <li><a class="twitter" href="#" target="_blank"> <i class="fa fa-twitter-square tw_awe"></i><span>Twitter</span> </a></li>
+        <li>
+          <a class="facebook" href="#" target="_blank"><i class="fa fa-facebook-official fa_awe"></i>
+          <span>Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#" target="_blank">
+          <i class="fa fa-twitter-square tw_awe"></i><span>Twitter</span>
+          </a>
+        </li>
       </ul>
+      <article>
+        <h2>このサービスはスマートフォンアプリで利用できます。</h2>
+        <ul>
+          <li>準備中です。
+          </li>
+          <li>
+            準備中です。
+            </li>
+        </ul>
+      </article>
+
       <!-- / .content -->
     </div>
     <!-- / .content-wrap -->
@@ -86,18 +101,6 @@ $(function() {
         $(this).find('span').stop().animate({
             'marginRight': '0px'
         }, 300);
-    });
-});
-</script>
-<!--テキストアニメーション-->
-<script src="js/tuxsudo.min.js"></script>
-<script src="js/jquery-letterfx.min.js"></script>
-<script>
-$(function() {
-    $(".tagline").letterfx({
-	  "fx": "fall",
-	  "backwards": false,
-	  "timing": 100,
     });
 });
 </script>
