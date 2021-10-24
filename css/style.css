@@ -27,7 +27,6 @@ body {
 	background-image: -moz-linear-gradient(top, #ff6347, #fa7057);
 	background-image: -ms-linear-gradient(top, #ff6347, #fa7057);
 	background-image: -o-linear-gradient(top, #ff6347, #fa7057);
-	background-image: -webkit-gradient(linear, center top, center bottom, from(#ff6347), to(#fa7057));
 	background-image: -webkit-linear-gradient(top, #ff6347, #fa7057);
 	background-image: linear-gradient(top, #ff6347, #fa7057);
 	/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
@@ -37,13 +36,17 @@ body {
     line-height: 1; /*行の高さ指定(数値のみの場合はfont-sizeの倍数)*/
 }
 
-ol, ul {
+ol {
     list-style: none; /*リストマーカーの種類指定(noneはなし)*/
 }
 
 .container {
     width: 100%; /*幅指定(100%は画面横幅いっぱいに表示)*/
     margin: auto; /*ボックス外側の余白*/
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
 .content-wrap {
@@ -51,6 +54,28 @@ ol, ul {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
+
+.main-top {
+    margin: 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .item {
+        border-radius: 10px;
+        background: #fdfdfd;
+        padding: 15px;
+        text-align: center;
+    }
+    .item-img {
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        text-align: center;
+        font-size: x-large;
+        color: #fa7057;
+    }
 
 *, *:after, *:before { /*アスタリスク「*」はすべての要素にスタイルを適用、「:before」は要素の先頭に「:after」は後方に擬似要素を作成。*/
     /*ボックスサイズの算出方法指定(border-boxはパディングとボーダーを幅と高さに含める)*/
@@ -109,10 +134,21 @@ article a {
 article a:hover {
     /*透明度設定*/
     opacity: 0.8;
-    filter: alpha(opacity=80);
-    -moz-opacity: 0.8; /*ここまで透明度設定*/
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6; /*ここまで透明度設定*/
     text-decoration: none; /*テキストの装飾指定(下線、上線など)(noneはなし)*/
 }
+
+/*フッター設定*/
+
+.footer01 {
+    background-color: #fdfdfd;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; /*下に固定*/
+    }
 
 /*ギャラリー設定*/
 
@@ -173,7 +209,7 @@ article a:hover {
 
 .content-wrap {
     width: 100%; /*幅指定(100%は画面横幅いっぱいに表示)*/
-    padding: 0 30px; /*ボックス内側の余白*/
+    padding: 0 30\\px; /*ボックス内側の余白*/
     position: relative; /*ボックスの配置方法(relativeは相対位置配置)*/
 }
 

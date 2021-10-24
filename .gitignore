@@ -5,6 +5,7 @@
 
 #追跡対象から除外
 *.DS_Store
+.History
 
 # User-specific files
 *.rsuser
