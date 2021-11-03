@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+#追跡対象から除外
+*.DS_Store
+
 # User-specific files
 *.rsuser
 *.suo
@@ -339,7 +342,7 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
-.history
+
 # BeatPulse healthcheck temp database
 healthchecksdb
 
