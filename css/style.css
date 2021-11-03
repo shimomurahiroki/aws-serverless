@@ -71,6 +71,7 @@ ol {
         height: auto;
     }
     p {
+        margin-top: 10px;
         text-align: center;
         font-size: normal;
         color: #fa7057;
@@ -220,13 +221,31 @@ header h1 {
     font-size: 2em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 }
 
+.item {
+    width: auto;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.item img {
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
 .toppage {
     margin-top: 200px; /*ボックス外側上の余白*/
 }
 
 .footer01 {
-    display: block;
+    display: block; /*スマホでツールバーが合ってもフッタが隠れない*/
 }
+
 /*メインの内容*/
 
 article {
