@@ -46,6 +46,7 @@ ol {
     min-height: 100vh;
     position: relative;/*←相対位置*/
     box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+    padding-bottom: 20px;
 }
 
 .content-wrap {
@@ -72,7 +73,7 @@ ol {
     }
     p {
         text-align: center;
-        font-size: x-large;
+        font-size: normal;
         color: #fa7057;
     }
 
