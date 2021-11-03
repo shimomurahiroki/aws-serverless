@@ -74,7 +74,7 @@
     height: 100%;
     background: rgba(0, 105, 147, 0.5);
     padding: 5em 1.5em 0;
-    font-size: 2em;
+    font-size: 1.5em;
     -webkit-transform: translate3d(-320px, 0, 0);
     transform: translate3d(-320px, 0, 0);
     -webkit-transition: -webkit-transform 0.4s;
