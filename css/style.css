@@ -65,10 +65,18 @@ ol {
         background: #fdfdfd;
         padding: 15px;
         text-align: center;
+        width: auto;
+        overflow: hidden;
+        justify-content: center;
     }
-    .item-img {
+    .item img {
         max-width: 100%;
         height: auto;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
     }
     p {
         margin-top: 10px;
@@ -224,7 +232,6 @@ header h1 {
 .item {
     width: auto;
     overflow: hidden;
-    /* display: flex; */
     justify-content: center;
 }
 
