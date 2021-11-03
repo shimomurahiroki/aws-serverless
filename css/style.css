@@ -46,7 +46,7 @@ ol {
     min-height: 100vh;
     position: relative;/*←相対位置*/
     box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-    padding-bottom: 20px;
+    padding-bottom: env(safe-area-inset-bottom);/*スマホのフッタ対策*/
 }
 
 .content-wrap {
