@@ -32,6 +32,10 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+a {
+    text-decoration:none;
+}
+
 #Root {
 	margin:0;	/*内容全体をセンタリング*/
 }
@@ -51,7 +55,7 @@ h1 {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 30px;
+    margin: 30px 20px;
 }
 
 #TodoList {
@@ -59,7 +63,7 @@ h1 {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 30px;
+    margin: 30px 20px;
 }
 
 #ReviewList {
@@ -67,7 +71,7 @@ h1 {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 30px;
+    margin: 30px 20px;
 }
 .appBox{
     margin-top: 20px;
@@ -134,7 +138,7 @@ h4 {
     color: white;
     bottom: 180px;
     border-color: #ff6347;
-    right: 30px;
+    right: 20px;
     padding: 6px 10px;
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
@@ -146,7 +150,35 @@ h4 {
 
 /* 上に戻るボタン */
 
+html {
+    scroll-behavior: smooth;
+}
 
+#page-top {
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: #000000;
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+}
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 2px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
 
 /* 外部ファイル読み込み */
 .slider {
