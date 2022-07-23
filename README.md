@@ -1,2 +1,1 @@
-# aws-serverless
-# サイトはこちら：https://restroomuse.com/
+https://restroomuse.com/

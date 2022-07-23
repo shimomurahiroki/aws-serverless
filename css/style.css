@@ -90,7 +90,7 @@ h1 {
     margin-top: 30px;
 }
 .appDlLink img{
-    margin: 5px;
+    margin: 15px 5px;
 }
 
 h2 {
@@ -130,7 +130,7 @@ h4 {
 .fixed_btn {
     background: rgba(255, 99, 71, 0.5);
     position: fixed;
-    font-size: 1.2em;
+    font-size: 0.8em;
     color: white;
     bottom: 180px;
     border-color: #ff6347;
@@ -139,10 +139,13 @@ h4 {
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
-    border-radius: 10px;
+    border-radius: 40px;
     cursor: pointer;
     z-index: 1;
     }
+
+/* 上に戻るボタン */
+
 
 
 /* 外部ファイル読み込み */
