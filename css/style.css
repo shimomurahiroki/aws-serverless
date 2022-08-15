@@ -1,0 +1,218 @@
+* {
+	margin:0; padding:0; 	/*全要素のマージン・パディングをリセット*/
+	line-height:1.5;	/*全要素の行の高さを1.5倍にする*/
+    color: #858383;		/*文字色*/
+    text-align: center;		/*見出し内容の位置調整*/
+}
+
+/* medeaArea */
+@media screen and (min-width: 481px) {
+	/* 481px以上に適用されるCSS（タブレット用） */
+    img {
+        max-width: 481px;
+    }
+}
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+    img {
+        max-width: 960px;
+    }
+}
+
+body {
+    position: relative;
+    background-color: #ff6347;
+    font-size: 1.3em;
+    font-family: "游ゴシック", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+a {
+    text-decoration:none;
+}
+
+#Root {
+	margin:0;	/*内容全体をセンタリング*/
+}
+#Info {
+    display: none;
+}
+#Kv {
+    display: none;
+}
+h1 {
+    margin: 20px 30px 10px 30px;
+    font-size: 1.6em;
+    color: white;
+}
+#MemoList {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 30px 20px;
+}
+
+#TodoList {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 30px 20px;
+}
+
+#ReviewList {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 30px 20px;
+}
+.appBox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.appIconImage {
+    margin-left: 10px;
+}
+.appIconText {
+    word-break: break-all;
+    margin-left: 20px;
+    height: 100px;
+    width: 180px;
+}
+.appGuide {
+    margin-top: 30px;
+}
+.appDlLink{
+    margin-top: 30px;
+}
+.appDlLink img{
+    margin: 15px 5px;
+}
+
+h2 {
+	text-align: center;		/*見出し内容の位置調整*/
+    font-size: 1.4em;
+}
+h3 {
+	text-align: center;		/*見出し内容の位置調整*/
+    font-size: 1.4em;
+    color: white;
+}
+#Message {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+}
+/* footerArea */
+footer {
+    background-color: #fff;
+    text-align: center;		/*見出し内容の位置調整*/
+}
+
+h4 {
+    background-color: #fff;
+    color: #ff6347;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+.appFunctionImage{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+}
+.fixed_btn {
+    background: rgba(255, 99, 71, 0.5);
+    position: fixed;
+    font-size: 0.8em;
+    color: white;
+    bottom: 180px;
+    border-color: #ff6347;
+    right: 20px;
+    padding: 6px 10px;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    border-radius: 40px;
+    cursor: pointer;
+    z-index: 1;
+    }
+
+/* 上に戻るボタン */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#page-top {
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: #000000;
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+}
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 2px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
+
+/* 外部ファイル読み込み */
+.slider {
+    width: 250px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider-item {
+    width: 250px;
+    float: left;
+}
+.slider-item img{
+    width:100%;
+}
+.slider-inner {
+    width: 400%;
+    animation: slider 10s infinite ease;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-250px);
+    }
+    50% {
+        transform: translateX(-500px);
+    }
+    75% {
+        transform: translateX(-750px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
